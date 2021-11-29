@@ -61,6 +61,9 @@ public class ReportController {
 		project.setText("");
 		midterm.setText("");
 		finalexam.setText("");
+		studentName.setText("");
+		stuID.setText("");
+		avgGrade.setText("");
 		
 		//get search TextField information for the student ID
 		String keyID = studentID;
@@ -140,6 +143,7 @@ public class ReportController {
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow(); //pane you are on 
         window.setScene(scene);
         window.show();
+        Student.setID(null);
     }
     
     @FXML
@@ -150,6 +154,8 @@ public class ReportController {
 		midterm.setText("");
 		finalexam.setText("");
 		letterGrade.setText("");
+		avgGrade.setText("");
+		studentName.setText("");
 		stuID.setText("");
 		if(Student.getID() != null) {
 	    	if(Student.getID().length() == 6) {
