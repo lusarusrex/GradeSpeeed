@@ -62,7 +62,6 @@ public class ReportController {
 		midterm.setText("");
 		finalexam.setText("");
 		studentName.setText("");
-		stuID.setText("");
 		avgGrade.setText("");
 		
 		//get search TextField information for the student ID
