@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="313.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CalculateGradeController">
+	<children>
+      <ImageView fitHeight="346.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/plain-black-wallpaper.jpg" />
+         </image>
+      </ImageView>
+		<Label layoutX="34.0" layoutY="14.0" prefHeight="26.0" prefWidth="433.0" text="GRADE SPEEED" textFill="#6e8fdd">
+			<font>
+				<Font name="Segoe Print" size="36.0" />
+			</font>
+		</Label>
+		<Label fx:id="labsLabel" layoutX="57.0" layoutY="116.0" text="Labs" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+		<TextField fx:id="labsField" layoutX="126.0" layoutY="112.0" prefHeight="25.0" prefWidth="171.0" />
+		<Label fx:id="quizLabel" layoutX="57.0" layoutY="149.0" text="Quizzes" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+		<TextField fx:id="quizField" layoutX="126.0" layoutY="145.0" prefHeight="25.0" prefWidth="171.0" />
+		<Button fx:id="computeButton" layoutX="347.0" layoutY="112.0" mnemonicParsing="false" onAction="#gradeMeSon" prefHeight="25.0" prefWidth="149.0" text="GENERATE GRADE" />
+		<Label layoutX="344.0" layoutY="176.0" text="Final Grade:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+		<TextField fx:id="gradeField" editable="false" layoutX="417.0" layoutY="172.0" prefHeight="25.0" prefWidth="50.0" />
+		<Label fx:id="midtermLabel" layoutX="33.0" layoutY="181.0" text="Midterm Exam" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+		<TextField fx:id="midtermField" layoutX="126.0" layoutY="178.0" prefHeight="25.0" prefWidth="171.0" />
+		<Label fx:id="finalXamLabel" layoutX="53.0" layoutY="212.0" text="Final Exam" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+		<TextField fx:id="finalXamField" layoutX="126.0" layoutY="211.0" prefHeight="25.0" prefWidth="171.0" />
+		<Label fx:id="projectLabel" layoutX="70.0" layoutY="245.0" text="Project" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+		<TextField fx:id="projectField" layoutX="126.0" layoutY="244.0" prefHeight="25.0" prefWidth="171.0" />
+		<Label fx:id="errorLabel" layoutX="326.0" layoutY="83.0" text="ERROR: INVALID ENTRY, TRY AGAIN" textFill="#e60a0a" />
+		<Label fx:id="letterGradeLabel" layoutX="477.0" layoutY="174.0" text="B+" textFill="#1a7be9">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Label>
+      <Label layoutX="14.0" layoutY="83.0" text="Enter Student ID" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="studentIDField" layoutX="126.0" layoutY="79.0" prefHeight="25.0" prefWidth="171.0" />
+      <Button layoutX="403.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#handleMainMenu" text="Main Menu" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ModifyController">
+   <children>
+      <ImageView fitHeight="343.0" fitWidth="600.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/plain-black-wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="studentName" layoutX="430.0" layoutY="27.0" prefHeight="31.0" prefWidth="167.0" />
+      <Label layoutX="345.0" layoutY="31.0" text="Student Name" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="searchField" layoutX="122.0" layoutY="27.0" />
+      <Label layoutX="22.0" layoutY="31.0" text="Enter Student ID" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="search" layoutX="280.0" layoutY="27.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Label layoutX="126.0" layoutY="73.0" text="Edit Assignments" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="mainMenu" layoutX="381.0" layoutY="144.0" mnemonicParsing="false" onMouseClicked="#handleMainMenu" text="Main Menu" />
+      <Button fx:id="update" layoutX="381.0" layoutY="104.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <Button fx:id="delete" layoutX="383.0" layoutY="188.0" mnemonicParsing="false" onAction="#delete" text="Delete Student" />
+      <Label layoutX="126.0" layoutY="171.0" />
+      <TextField fx:id="labs" layoutX="98.0" layoutY="106.0" />
+      <Label layoutX="22.0" layoutY="108.0" text="Labs" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="148.0" text="Quizzes" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="quizzes" layoutX="98.0" layoutY="146.0" />
+      <TextField fx:id="project" layoutX="98.0" layoutY="190.0" />
+      <Label layoutX="24.0" layoutY="192.0" text="Project" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="231.0" text="Midterm" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="273.0" text="Final Exam" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="midterm" layoutX="98.0" layoutY="229.0" />
+      <TextField fx:id="finalExam" layoutX="98.0" layoutY="271.0" />
+      <Button fx:id="editLab" layoutX="258.0" layoutY="106.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="editQuiz" layoutX="258.0" layoutY="146.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="editProject" layoutX="258.0" layoutY="190.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="editMidterm" layoutX="258.0" layoutY="229.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="editFinal" layoutX="258.0" layoutY="271.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="report" layoutX="384.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleReport" onMouseClicked="#handleReport" text="View Report" />
+      <Label layoutX="404.0" layoutY="264.0" text="MODIFY" textFill="#6e8fdd">
+         <font>
+            <Font name="Segoe Print" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="624.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/5688017-dark-grey-wallpapers.jpg" />
+         </image></ImageView>
+      <Label layoutX="209.0" layoutY="29.0" text="Create Account" textFill="WHITE">
+         <font>
+            <Font name="Javanese Text" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserField" layoutX="218.0" layoutY="124.0" />
+      <TextField fx:id="newPasswordField" layoutX="218.0" layoutY="183.0" />
+      <Label layoutX="259.0" layoutY="106.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="165.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="257.0" layoutY="240.0" mnemonicParsing="false" onAction="#createClick" text="Create">
+         <font>
+            <Font name="Corbel" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="492.0" layoutY="14.0" mnemonicParsing="false" onAction="#HomeClick" text="Home">
+         <font>
+            <Font name="Corbel" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
